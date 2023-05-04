@@ -9,6 +9,9 @@ const App = () => {
                 <NavBar />
                 <Banner />
             </div>
+            <div className={"white-part"}>
+                
+            </div>
         </div>
     );
 };
