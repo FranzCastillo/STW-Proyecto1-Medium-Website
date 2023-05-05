@@ -18,6 +18,9 @@ const TrendingCard = ({id, imgSrc, author, title, date, readTime}) => {
                     <h2>{title}</h2>
                 </div>
                 <div className={"post-info"}>
+                    <span className={"date"}>{date}</span>
+                    <span className={"dot"}>•</span>
+                    <span className={"read-time"}>{readTime}</span>
                 </div>
             </div>
         </div>
