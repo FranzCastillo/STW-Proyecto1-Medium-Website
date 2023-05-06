@@ -133,6 +133,15 @@ const News = () => {
                                 <a href={"#"}>See more topics</a>
                             </div>
                             <div className={"footer"}>
+                                <a href={"#"}>Help</a>
+                                <a href={"#"}>Status</a>
+                                <a href={"#"}>Writers</a>
+                                <a href={"#"}>Blog</a>
+                                <a href={"#"}>Careers</a>
+                                <a href={"#"}>Privacy</a>
+                                <a href={"#"}>Terms</a>
+                                <a href={"#"}>About</a>
+                                <a href={"#"}>Texto to speech</a>
                             </div>
                         </div>
                     </Grid>
