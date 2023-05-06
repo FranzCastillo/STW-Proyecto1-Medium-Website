@@ -1,10 +1,8 @@
 import React from "react";
 import "./Trending.scss";
 import {Grid} from "@mui/material";
-import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
-import TrendingIcon from "./TrendingIcon";
+import TrendingIcon from "./TrendingCard/TrendingIcon";
 import TrendingCard from "./TrendingCard/TrendingCard";
 
 const Trending = () => {
