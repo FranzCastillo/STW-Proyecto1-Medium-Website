@@ -1,15 +1,16 @@
 import React from "react";
 import "./News.scss";
 import {Grid} from "@mui/material";
-import { styled } from '@mui/material/styles';
+import {styled} from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
+import Chip from '@mui/material/Chip';
 import NewsCard from "./NewsCard/NewsCard";
 
 const News = () => {
     return (
         <div className={"bottom"}>
-            <Box sx={{ flexGrow: 1 }}>
+            <Box sx={{flexGrow: 1}}>
                 <Grid container spacing={2}>
                     <Grid item xs={12}>
 
@@ -81,10 +82,57 @@ const News = () => {
                     <Grid item xs={4}>
                         <div className={"right-part"}>
                             <div className={"discover"}>
-
+                                <h2>Discover more of what matters to you</h2>
+                                <div className={"chips"}>
+                                    <Chip label="Programming" clickable style={{
+                                        fontFamily: "medium-content-sans-serif-font, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif",
+                                        fontWeight: "400",
+                                        fontSize: "14px"
+                                    }}/>
+                                    <Chip label="Data Science" clickable style={{
+                                        fontFamily: "medium-content-sans-serif-font, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif",
+                                        fontWeight: "400",
+                                        fontSize: "14px"
+                                    }}/>
+                                    <Chip label="Technology" clickable style={{
+                                        fontFamily: "medium-content-sans-serif-font, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif",
+                                        fontWeight: "400",
+                                        fontSize: "14px"
+                                    }}/>
+                                    <Chip label="Self Improvement" clickable style={{
+                                        fontFamily: "medium-content-sans-serif-font, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif",
+                                        fontWeight: "400",
+                                        fontSize: "14px"
+                                    }}/>
+                                    <Chip label="Writing" clickable style={{
+                                        fontFamily: "medium-content-sans-serif-font, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif",
+                                        fontWeight: "400",
+                                        fontSize: "14px"
+                                    }}/>
+                                    <Chip label="Relationships" clickable style={{
+                                        fontFamily: "medium-content-sans-serif-font, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif",
+                                        fontWeight: "400",
+                                        fontSize: "14px"
+                                    }}/>
+                                    <Chip label="Machine Learning" clickable style={{
+                                        fontFamily: "medium-content-sans-serif-font, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif",
+                                        fontWeight: "400",
+                                        fontSize: "14px"
+                                    }}/>
+                                    <Chip label="Productivity" clickable style={{
+                                        fontFamily: "medium-content-sans-serif-font, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif",
+                                        fontWeight: "400",
+                                        fontSize: "14px"
+                                    }}/>
+                                    <Chip label="Politics" clickable style={{
+                                        fontFamily: "medium-content-sans-serif-font, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif",
+                                        fontWeight: "400",
+                                        fontSize: "14px"
+                                    }}/>
+                                </div>
+                                <a href={"#"}>See more topics</a>
                             </div>
                             <div className={"footer"}>
-
                             </div>
                         </div>
                     </Grid>
