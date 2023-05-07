@@ -8,19 +8,29 @@ const Index = (props) => {
     return (
         <div>
             <Head>
-                <link rel="icon" href="https://miro.medium.com/v2/1*m-R_BkNf1Qjr1YbyOIJY2w.png" />
+                <link rel="icon" href="https://miro.medium.com/v2/1*m-R_BkNf1Qjr1YbyOIJY2w.png"/>
                 <title>Medium - Where good ideas find you.</title>
             </Head>
             <div className={"yellow-part"}>
-                <NavBar />
-                <Banner />
+                <NavBar/>
+                <Banner/>
             </div>
             <div className={"white-part"}>
-                <Trending />
-                <News />
+                <Trending
+                    data={props.trendingData}
+                />
+                <News
+                    data={props.newsData}
+                />
             </div>
         </div>
     )
 }
-
 export default Index
+
+export async function getServerSideProps() {
+    const trendingData = await fetch("http://localhost:3000/api/trending").then(res => res.json());
+    const newsData = await fetch("http://localhost:3000/api/news").then(res => res.json());
+
+    return {props: {trendingData, newsData}}
+}
