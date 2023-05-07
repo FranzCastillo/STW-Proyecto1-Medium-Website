@@ -29,8 +29,8 @@ const Index = (props) => {
 export default Index
 
 export async function getServerSideProps() {
-    const trendingData = await fetch("http://localhost:3000/api/trending").then(res => res.json());
-    const newsData = await fetch("http://localhost:3000/api/news").then(res => res.json());
+    const trendingData = await fetch("/api/trending'").then(res => res.json());
+    const newsData = await fetch("/api/news").then(res => res.json());
 
     return {props: {trendingData, newsData}}
 }
