@@ -52,18 +52,16 @@ const MMM = () => {
      * @returns {*[]}
      */
     const updateMatrix = () => {
-        setMatrix((matrix) => {
-            const newMatrix = [...matrix];
-            for (let i = 0; i < MATRIX_DIM; i++) {
-                for (let j = 0; j < MATRIX_DIM; j++) {
-                    setTimeout(() => {
-                        newMatrix[i][j].isShown = Math.random() < 0.5;
-                        setMatrix([...newMatrix]);
-                    }, Math.random() * INTERVAL);
-                }
+        const newMatrix = [...matrix];
+        for (let i = 0; i < MATRIX_DIM; i++) {
+            for (let j = 0; j < MATRIX_DIM; j++) {
+                setTimeout(() => {
+                    newMatrix[i][j].isShown = Math.random() < 0.5;
+                    setMatrix([...newMatrix]);
+                }, Math.random() * INTERVAL);
             }
-            return newMatrix;
-        });
+        }
+        // return newMatrix;
     };
 
     // Create a 20x20 matrix filled with the letter M
@@ -88,7 +86,16 @@ const MMM = () => {
                         {row.map((col, j) => {
                             return (
                                 <div className={`col ${col.isShown ? 'col-fade-in' : 'col-fade-out'}`} key={j}>
-                                    {col.isShown && col.letter!== "s" ? col.letter : <span style={{ visibility: "hidden" }}>&nbsp;</span>}
+                                    {col.isShown && col.letter!== "s" ?
+                                        <span suppressHydrationWarning={true}>
+                                            {col.letter}
+                                        </span>:
+                                        <span
+                                            suppressHydrationWarning={true}
+                                            style={{ visibility: "hidden" }}>
+                                                &nbsp;
+                                        </span>
+                                    }
                                 </div>
                             );
                         })}
