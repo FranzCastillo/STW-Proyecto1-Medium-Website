@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from "react";
 import Logo from "./Logo";
-import "./NavBar.scss";
 
 const NavBar = () => {
     const [isYellow, setIsYellow] = useState(true);

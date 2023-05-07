@@ -21,3 +21,24 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+# Ignore Node.js modules
+node_modules/
+
+# Ignore build output
+/.next/
+/out/
+
+# Ignore environment variables
+.env
+
+# Ignore logs
+logs
+*.log
+
+# Ignore OS generated files
+Thumbs.db
+
+# Ignore npm's cache
+.npm/

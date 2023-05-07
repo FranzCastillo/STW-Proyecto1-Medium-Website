@@ -1,5 +1,4 @@
 import React from "react";
-import "./Trending.scss";
 import {Grid} from "@mui/material";
 import Box from '@mui/material/Box';
 import TrendingIcon from "./TrendingCard/TrendingIcon";

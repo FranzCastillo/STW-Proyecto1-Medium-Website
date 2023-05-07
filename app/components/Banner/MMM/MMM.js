@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "./MMM.scss";
 
 const MMM = () => {
     const MATRIX_DIM = 20;

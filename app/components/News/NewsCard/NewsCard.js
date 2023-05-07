@@ -1,5 +1,4 @@
 import React from "react";
-import "./NewsCard.scss";
 import Chip from '@mui/material/Chip';
 import SaveIcon from "./SaveIcon";
 

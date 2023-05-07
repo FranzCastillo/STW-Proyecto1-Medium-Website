@@ -1,5 +1,4 @@
 import React from 'react';
-import './TrendingCard.scss';
 
 const TrendingCard = ({id, imgSrc, author, title, date, readTime}) => {
     return(
