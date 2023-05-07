@@ -1,0 +1,73 @@
+$yellow: #FFC017;
+$gray: rgba(41, 41, 41, 1);
+
+@mixin nav-bar($background-color) {
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 25px;
+  background-color: $background-color;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  padding: 25px 135px;
+  z-index: 100;
+  border-bottom: 1px solid black;
+  transition: background-color 300ms linear;
+
+  .nav-bar-links {
+    display: flex;
+    align-items: center;
+    padding-right: 165px;
+
+    a {
+      text-decoration: none;
+      color: $gray;
+      line-height: 20px;
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    button{
+      transition: background-color 300ms linear;
+      background-color: rgb(26, 137, 23);
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 20px;
+      line-height: 20px;
+      font-size: 14px;
+      font-weight: 400;
+      cursor: pointer;
+    }
+  }
+
+  .nav-bar-links > *:not(:last-child) {
+    margin-right: 30px; /* Add spacing between components except for the last one */
+  }
+
+
+  #separator{
+    width: 600px;
+  }
+
+  .logo{
+    height: 25px !important;
+    width: 165px !important;
+    //padding: 175px 150px;
+  }
+}
+
+.nav-bar-white {
+  @include nav-bar(white);
+}
+
+.nav-bar-yellow {
+  @include nav-bar($yellow);
+  .nav-bar-links button {
+    background-color: rgba(25, 25, 25, 1);
+  }
+}
