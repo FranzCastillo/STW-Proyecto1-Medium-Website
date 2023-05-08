@@ -26,7 +26,9 @@ const NewsCard = ({imgSrc, author, title, description, date, readTime, chipName,
                         <Chip
                             size={"small"}
                             label={chipName}
-                            className={"chip"}/>
+                            className={"chip"}
+                            clickable
+                        />
                         {hasStar ? <StarIcon /> : null}
                     </div>
                     <div className={"save"}>

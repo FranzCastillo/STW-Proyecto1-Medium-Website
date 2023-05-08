@@ -190,6 +190,7 @@ $gray: rgba(41, 41, 41, 1);
         height: 20px;
         border-radius: 4px;
         margin-right: 8px;
+        cursor: pointer;
       }
 
       #author {
@@ -251,6 +252,9 @@ $gray: rgba(41, 41, 41, 1);
         }
       }
     }
+  }
+  .cover-photo{
+    cursor: pointer;
   }
 }
 
