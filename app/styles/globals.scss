@@ -71,18 +71,28 @@ $gray: rgba(41, 41, 41, 1);
   .logo{
     height: 25px !important;
     width: 165px !important;
-    //padding: 175px 150px;
+    cursor: pointer;
   }
 }
 
 .nav-bar-white {
   @include nav-bar(white);
+
+  .nav-bar-links button {
+    &:hover{
+      background-color: rgb(24, 119, 22);
+    }
+  }
 }
 
 .nav-bar-yellow {
   @include nav-bar($yellow);
   .nav-bar-links button {
     background-color: rgba(25, 25, 25, 1);
+
+    &:hover{
+      background-color: black;
+    }
   }
 }
 
@@ -134,9 +144,10 @@ $gray: rgba(41, 41, 41, 1);
     text-decoration: none;
     border: 1px solid black;
     border-radius: 20px;
-    background-color: $gray;
     color: white;
     margin-top: 25px;
+    background-color: rgb(25, 25, 25);
+
 
     &:hover{
       background-color: black;
@@ -325,7 +336,7 @@ $gray: rgba(41, 41, 41, 1);
       letter-spacing: -0.014em;
       line-height: 30px;
       font-size: 32px;
-      font-weight: 500;
+      font-weight: bolder;
       font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
   }
@@ -338,19 +349,21 @@ $gray: rgba(41, 41, 41, 1);
       margin-bottom: 8px;
       display: flex;
       flex-direction: row;
-      cursor: pointer;
 
       .logo {
         width: 20px;
         height: 20px;
         border-radius: 4px;
         margin-right: 8px;
+        cursor: pointer;
       }
 
       .author {
         flex-wrap: wrap;
         align-items: flex-start;
         display: flex;
+        cursor: pointer;
+
         #name {
           margin: 2px 0 0;
           padding-right: 2px;
@@ -361,8 +374,8 @@ $gray: rgba(41, 41, 41, 1);
           text-overflow: ellipsis;
           max-height: 16px;
           line-height: 16px;
-          font-size: 13px;
-          font-weight: 500;
+          font-size: 12px;
+          font-weight: bold;
           color: $gray;
         }
       }
