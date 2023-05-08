@@ -36,7 +36,8 @@ export async function getServerSideProps() {
             "author": "Minko Gechev",
             "title": "Angular v18 is here!",
             "date": "May 3",
-            "readTime": "12 min read"
+            "readTime": "12 min read",
+            "hasStar": false
         },
         {
             "id": "02",
@@ -44,7 +45,8 @@ export async function getServerSideProps() {
             "author": "Judd Antin",
             "title": "The UX Research Reckoning is Here",
             "date": "Apr 26",
-            "readTime": "3 min read"
+            "readTime": "3 min read",
+            "hasStar": true
         },
         {
             "id": "03",
@@ -52,7 +54,8 @@ export async function getServerSideProps() {
             "author": "Felicia Wu",
             "title": "My first layoff was the best thing that could happen to my career",
             "date": "Apr 24",
-            "readTime": "7 min read"
+            "readTime": "7 min read",
+            "hasStar": false
         },
         {
             "id": "04",
@@ -60,14 +63,16 @@ export async function getServerSideProps() {
             "author": "Whitney Alese",
             "title": "There will be no mourning Carolyn Bryant Donham",
             "date": "Apr 27",
-            "readTime": "3 min read"
+            "readTime": "3 min read",
+            "hasStar": true
         },{
             "id": "05",
             "imgSrc": "https://miro.medium.com/v2/resize:fill:40:40/1*IL0mnvzNcpG2ZD0JBqo7zQ.jpeg",
             "author": "Cassie Kozyrkov",
             "title": "How AI is Evolving",
             "date": "Apr 26",
-            "readTime": "3 min read"
+            "readTime": "3 min read",
+            "hasStar": false
         },
         {
             "id": "06",
@@ -75,7 +80,8 @@ export async function getServerSideProps() {
             "author": "Joseph Mavericks",
             "title": "Airbnb's $600K Pitch Dock: A Presentation Masterclass for Entrepreneurs",
             "date": "May 2",
-            "readTime": "9 min read"
+            "readTime": "9 min read",
+            "hasStar": true
         },
     ]
     const newsData = [
@@ -87,7 +93,8 @@ export async function getServerSideProps() {
                 "date": "May 5",
                 "readTime": "4 min read",
                 "chipName": "Medium",
-                "coverPhotoSrc": "https://miro.medium.com/v2/resize:fill:200:134/1*523g8yJp6WGlwUZXLbuvQg.png"
+                "coverPhotoSrc": "https://miro.medium.com/v2/resize:fill:200:134/1*523g8yJp6WGlwUZXLbuvQg.png",
+                "hasStar": false
             },
             {
                 "imgSrc": "https://miro.medium.com/v2/resize:fill:20:20/0*-CUITFiQ0Buuql-x.",
@@ -97,7 +104,8 @@ export async function getServerSideProps() {
                 "date": "Apr 23",
                 "readTime": "17 min read",
                 "chipName": "Programming",
-                "coverPhotoSrc": "https://miro.medium.com/v2/resize:fill:200:134/1*X-_AvCTBRFyTGXpcz_utlA.png"
+                "coverPhotoSrc": "https://miro.medium.com/v2/resize:fill:200:134/1*X-_AvCTBRFyTGXpcz_utlA.png",
+                "hasStar": true
             },
             {
                 "imgSrc": "https://miro.medium.com/v2/resize:fill:20:20/1*tPfbBeQ23qMKUptWlw1FaQ.jpeg",
@@ -107,7 +115,8 @@ export async function getServerSideProps() {
                 "date": "Apr 26",
                 "readTime": "6 min read",
                 "chipName": "Writing",
-                "coverPhotoSrc": "https://miro.medium.com/v2/resize:fill:200:134/1*nW36GR_ZSYROI-U0CpQRkA.png"
+                "coverPhotoSrc": "https://miro.medium.com/v2/resize:fill:200:134/1*nW36GR_ZSYROI-U0CpQRkA.png",
+                "hasStar": false
             },
             {
                 "imgSrc": "https://miro.medium.com/v2/resize:fill:20:20/1*ROtLAgltIdICq2DTRUMKqg.jpeg",
@@ -117,7 +126,8 @@ export async function getServerSideProps() {
                 "date": "May 2",
                 "readTime": "7 min read",
                 "chipName": "Sea Turtles",
-                "coverPhotoSrc": "https://miro.medium.com/v2/resize:fill:200:134/0*fDHA_4K1QRIsktoI"
+                "coverPhotoSrc": "https://miro.medium.com/v2/resize:fill:200:134/0*fDHA_4K1QRIsktoI",
+                "hasStar": false
             },
             {
                 "imgSrc": "https://miro.medium.com/v2/resize:fill:40:40/1*w4xWkbxe1SagK3TQkLmM5A.jpeg",
@@ -127,7 +137,8 @@ export async function getServerSideProps() {
                 "date": "Apr 27",
                 "readTime": "18 min read",
                 "chipName": "Covid-19",
-                "coverPhotoSrc": "https://miro.medium.com/v2/resize:fill:200:134/1*BHIhJEaYvoOGdtdAnarn2A.jpeg"
+                "coverPhotoSrc": "https://miro.medium.com/v2/resize:fill:200:134/1*BHIhJEaYvoOGdtdAnarn2A.jpeg",
+                "hasStar": true
             },
             {
                 "imgSrc": "https://miro.medium.com/v2/resize:fill:20:20/1*RPBgEuskei0cI2VExBRQLQ.png",
@@ -137,7 +148,8 @@ export async function getServerSideProps() {
                 "date": "May 1",
                 "readTime": "6 min read",
                 "chipName": "Corporate Innovation",
-                "coverPhotoSrc": "https://miro.medium.com/v2/resize:fill:200:134/1*QMUAD6k4BYFBWTsSTJnGCg.png"
+                "coverPhotoSrc": "https://miro.medium.com/v2/resize:fill:200:134/1*QMUAD6k4BYFBWTsSTJnGCg.png",
+                "hasStar": false
             },
         ]
 

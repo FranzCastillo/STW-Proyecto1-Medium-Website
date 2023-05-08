@@ -26,6 +26,7 @@ const Trending = (props) => {
                                 title={item.title}
                                 date={item.date}
                                 readTime={item.readTime}
+                                hasStar={item.hasStar}
                             />
                         </Grid>
                     ))}

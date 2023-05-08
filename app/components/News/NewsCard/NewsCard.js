@@ -1,8 +1,9 @@
 import React from "react";
 import Chip from '@mui/material/Chip';
 import SaveIcon from "./SaveIcon";
+import StarIcon from "../../StarIcon";
 
-const NewsCard = ({imgSrc, author, title, description, date, readTime, chipName, coverPhotoSrc}) => {
+const NewsCard = ({imgSrc, author, title, description, date, readTime, chipName, coverPhotoSrc, hasStar}) => {
     return(
         <div className={"news-card"}>
             <div className={"text"}>
@@ -26,6 +27,7 @@ const NewsCard = ({imgSrc, author, title, description, date, readTime, chipName,
                             size={"small"}
                             label={chipName}
                             className={"chip"}/>
+                        {hasStar ? <StarIcon /> : null}
                     </div>
                     <div className={"save"}>
                         <SaveIcon/>

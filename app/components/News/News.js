@@ -26,6 +26,7 @@ const News = (props) => {
                                     readTime={item.readTime}
                                     chipName={item.chipName}
                                     coverPhotoSrc={item.coverPhotoSrc}
+                                    hasStar={item.hasStar}
                                 />
                             ))}
                         </div>

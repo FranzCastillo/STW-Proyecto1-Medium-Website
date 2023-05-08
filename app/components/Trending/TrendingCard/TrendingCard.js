@@ -1,6 +1,7 @@
 import React from 'react';
+import StarIcon from "../../StarIcon";
 
-const TrendingCard = ({id, imgSrc, author, title, date, readTime}) => {
+const TrendingCard = ({id, imgSrc, author, title, date, readTime, hasStar}) => {
     return(
         <div className={"trending-card"}>
             <div className={"id-display"}>
@@ -20,6 +21,7 @@ const TrendingCard = ({id, imgSrc, author, title, date, readTime}) => {
                     <span className={"date"}>{date}</span>
                     <span className={"dot"}>•</span>
                     <span className={"read-time"}>{readTime}</span>
+                    {hasStar ? <StarIcon /> : null}
                 </div>
             </div>
         </div>
