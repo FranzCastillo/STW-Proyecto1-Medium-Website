@@ -17,7 +17,7 @@ Para visitar el proyecto, puedes hacer click [aquí](https://medium-replica-five
 
 ## ¿Qué tecnologías utiliza este proyecto?
 Este proyecto utiliza las siguientes tecnologías:
-- <img src="https://assets.stickpng.com/images/584830f5cef1014c0b5e4aa1.png" width="30">[ React](https://es.reactjs.org/)
+- <img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" width="30">[ React](https://es.reactjs.org/)
 - <img src="https://media.graphassets.com/VKHHNvEETYqZRkqgjybc" width="30">[ Next.js](https://nextjs.org/)
 - <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1280px-Sass_Logo_Color.svg.png" width="30">[ SASS](https://sass-lang.com/)
 - <img src="https://mui.com/static/logo.png" width="30">[ MUI](https://mui.com/)
