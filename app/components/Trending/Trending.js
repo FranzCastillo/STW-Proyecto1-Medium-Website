@@ -18,7 +18,7 @@ const Trending = (props) => {
                         </div>
                     </Grid>
                     {data.map((item) => (
-                        <Grid item xs={4}>
+                        <Grid item xs={4} key={item.id}>
                             <TrendingCard
                                 id={item.id}
                                 imgSrc={item.imgSrc}

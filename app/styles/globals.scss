@@ -265,8 +265,10 @@ $gray: rgba(41, 41, 41, 1);
   align-items: center;
 
   .sticky-wrapper {
+    position: sticky;
     height: 100vh;
     overflow: auto;
+    top: 75px;
 
     .right-part {
       position: sticky;

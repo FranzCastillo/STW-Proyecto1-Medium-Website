@@ -5,7 +5,7 @@ import StarIcon from "../../StarIcon";
 
 const NewsCard = ({imgSrc, author, title, description, date, readTime, chipName, coverPhotoSrc, hasStar}) => {
     return(
-        <div className={"news-card"}>
+        <div className={"news-card"} >
             <div className={"text"}>
                 <div className={"user-info"}>
                     <img src={imgSrc} alt={"logo"} className={"logo"}/>
